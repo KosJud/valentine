@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    color: #e91e63;
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#yesBtn {
+    background-color: #4caf50;
+    color: white;
+}
+
+#noBtn {
+    background-color: #f44336;
+    color: white;
+    position: absolute;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#yesBtn:hover {
+    background-color: #45a049;
+}
+
+#noBtn:hover {
+    background-color: #d32f2f;
+}
+
+#hackingContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: #00ff00;
+    font-family: monospace;
+    font-size: 1.2em;
+    white-space: pre-wrap;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 1s ease;
+    z-index: 9998;
+    text-align: left;
+    padding: 20px;
+    pointer-events: none;
+}
